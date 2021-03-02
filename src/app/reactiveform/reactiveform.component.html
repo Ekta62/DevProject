@@ -1,0 +1,48 @@
+<!--p>reactiveform works!</p-->
+<!--p>templateform works!</p-->
+<mat-card>
+    <mat-toolbar>Reactive Form</mat-toolbar>
+    <br><br>
+    <form [formGroup]="RegisterForm" (ngSubmit)="getDetails()">
+      <mat-form-field>
+        <input type = "text" matInput placeholder="Your Name" formControlName="username">
+      </mat-form-field>
+      <br><br>
+      <mat-form-field>
+        <input type = "text" matInput placeholder=" Your Email" formControlName="email">
+      </mat-form-field>
+      <br><br>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Contact" formControlName="contact">
+      </mat-form-field>
+      <br><br>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+      <br><br>
+      <mat-form-field>
+        <input type="text" matInput placeholder=" Confirm Password" formControlName="confirmpassword">
+      </mat-form-field>
+      <br><br>
+  <p>Select Gender:</p>
+      <mat-radio-group type="radio" matInput aria-label="Select an option" formControlName="Gender">
+          <mat-radio-button value="Male">Male</mat-radio-button>
+          <mat-radio-button value="Female">Female</mat-radio-button>
+      </mat-radio-group>
+        <br><br>
+        <mat-form-field appearance="fill">
+          <mat-label>Select</mat-label>
+          <mat-select color="primary" formControlName="location">
+            <mat-option value="Punjab">Punjab</mat-option>
+            <mat-option value="Himachal Pradesh">Himachal Pradesh</mat-option>
+            <mat-option value="Jammu and kashmir">Jammu and kashmir</mat-option>
+            <mat-option value="Mumbai">Mumbai</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br><br>
+        <mat-checkbox type="checkbox" matInput formControlName="checkbox" class="example-margin">I Accept!</mat-checkbox>
+        <br><br>
+      <button type="submit" mat-raised-button color="primary">
+        <mat-icon color="accent">home</mat-icon> Submit</button>
+    </form>
+    </mat-card>

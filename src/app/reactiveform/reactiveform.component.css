@@ -1,0 +1,19 @@
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 12px;
+}
+mat-card{
+  position:relative;
+  text-align: justify;
+  height:auto;
+  margin-left:9%;
+  margin-right: 9%;
+  margin-top: 0.1%;
+  margin-bottom: 0.5%;
+  background-color: rgb(208, 231, 231);
+}
+.example-margin {
+  margin: 0 12px;
+}
+mat-form-field,input{
+  width:100%;
+}
